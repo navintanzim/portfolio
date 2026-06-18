@@ -219,6 +219,105 @@
                 margin-top: 1rem;
             }
 
+            .stack-list,
+            .experience-list,
+            .education-list {
+                display: grid;
+                gap: 0.9rem;
+                margin-top: 1rem;
+            }
+
+            .skill-groups {
+                display: grid;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+
+            .skill-group {
+                padding: 1rem 1.1rem;
+                border-radius: 20px;
+                border: 1px solid var(--line);
+                background: rgba(255, 255, 255, 0.42);
+            }
+
+            .skill-group h3 {
+                margin-bottom: 0.85rem;
+                font-size: 1rem;
+                color: var(--accent);
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+            }
+
+            .skill-item,
+            .experience-item,
+            .education-item {
+                padding: 1rem 1.1rem;
+                border-radius: 20px;
+                border: 1px solid var(--line);
+                background: rgba(255, 255, 255, 0.42);
+            }
+
+            .skill-item {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 1rem;
+                padding: 0.85rem 0;
+                border: 0;
+                border-radius: 0;
+                background: transparent;
+            }
+
+            .skill-item + .skill-item {
+                border-top: 1px solid var(--line);
+            }
+
+            .skill-meta,
+            .experience-meta {
+                color: var(--muted);
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            .skill-score {
+                flex-shrink: 0;
+                padding: 0.35rem 0.7rem;
+                border-radius: 999px;
+                background: var(--accent-soft);
+                color: var(--accent);
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
+
+            .experience-item h3 {
+                margin-bottom: 0.35rem;
+                font-size: 1.1rem;
+            }
+
+            .education-item h3 {
+                margin-bottom: 0.35rem;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.03em;
+            }
+
+            .education-degree {
+                margin-bottom: 0.25rem;
+                color: var(--text);
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.03em;
+            }
+
+            .empty-state {
+                margin-top: 1rem;
+                padding: 1rem 1.1rem;
+                border: 1px dashed rgba(198, 107, 61, 0.35);
+                border-radius: 20px;
+                color: var(--muted);
+                background: rgba(255, 255, 255, 0.28);
+            }
+
             .contact-list div {
                 padding: 0.9rem 1rem;
                 border-radius: 18px;
@@ -278,6 +377,7 @@
                     <a href="#about">About Me</a>
                     <a href="#projects">Featured Projects</a>
                     <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
                     <a href="#experience">Experience</a>
                     <a href="#github">GitHub</a>
                     <a href="#linkedin">LinkedIn</a>
@@ -289,7 +389,7 @@
                 <section class="hero" id="home">
                     <div>
                         <div class="eyebrow">Portfolio Scaffold</div>
-                        <h1>Your Name Here</h1>
+                        <h1>Mashrure Tanzim</h1>
                         <p>
                             This homepage is ready for your portfolio content. Replace this intro text, add your
                             project details, and update each section below when you are ready.
@@ -307,7 +407,11 @@
                 <section class="content-grid">
                     <article class="section-card span-7" id="about">
                         <h2>About Me</h2>
-                        <p>Write your personal introduction, background, interests, and what kind of work you do.</p>
+                        <p>I have been working for 6 years as a full stack developer. During my tenure I
+worked with php (cakephp and laravel), html, css, javascript (both raw and
+vue.js), React with Polaris for Shopify, MYSQL and some rudimentary wordpress.
+I led a team as a focal point to complete given projects. I have worked on more
+than 15 projects related to the a2i initiative of the ministry.</p>
                     </article>
 
                     <article class="section-card span-5" id="projects">
@@ -317,12 +421,96 @@
 
                     <article class="section-card span-5" id="skills">
                         <h2>Skills</h2>
-                        <p>Add your technical skills, tools, frameworks, and strengths in this section.</p>
+                        <!-- <p>Your skills now load from the database.</p> -->
+
+                        @if ($skills->isEmpty())
+                            <div class="empty-state">
+                                No skills added yet. Insert rows into the <code>skills</code> table to show them here.
+                            </div>
+                        @else
+                            <div class="skill-groups">
+                                @foreach ($skills->groupBy(fn ($skill) => $skill->category ?: 'Uncategorized') as $category => $groupedSkills)
+                                    <div class="skill-group">
+                                        <h3>{{ $category }}</h3>
+
+                                        @foreach ($groupedSkills as $skill)
+                                            <div class="skill-item">
+                                                <div>
+                                                    <strong>{{ $skill->name }}</strong>
+                                                </div>
+
+                                                @if (! is_null($skill->proficiency))
+                                                    <div class="skill-score">
+                                                        Proficiency: {{ $skill->proficiency }}
+                                                    </div>
+                                                @endif
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endif
+                    </article>
+
+                    <article class="section-card span-7" id="education">
+                        <h2>Education</h2>
+
+                        @if ($educations->isEmpty())
+                            <div class="empty-state">
+                                No education entries added yet. Insert rows into the <code>educations</code> table to
+                                show them here.
+                            </div>
+                        @else
+                            <div class="education-list">
+                                @foreach ($educations as $education)
+                                    <div class="education-item">
+                                        <h3>{{ $education->institution }}</h3>
+                                        <div class="education-degree">{{ $education->degree_type }}</div>
+                                        <div class="skill-meta">
+                                            Degree obtained: {{ $education->degree_obtained ?: 'Not added' }}
+                                        </div>
+                                        <p>{{ $education->subject }}</p>
+
+                                        @if (! is_null($education->cgpa))
+                                            <div class="experience-meta">
+                                                CGPA: {{ number_format((float) $education->cgpa, 2) }}
+                                            </div>
+                                        @endif
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endif
                     </article>
 
                     <article class="section-card span-7" id="experience">
                         <h2>Experience</h2>
-                        <p>Use this area for roles, internships, freelance work, or your learning journey timeline.</p>
+                        <!-- <p>Your experience entries now load from the database.</p> -->
+
+                        @if ($experiences->isEmpty())
+                            <div class="empty-state">
+                                No experience entries added yet. Insert rows into the <code>experiences</code> table to
+                                show them here.
+                            </div>
+                        @else
+                            <div class="experience-list">
+                                @foreach ($experiences as $experience)
+                                    <div class="experience-item">
+                                        <h3>{{ $experience->position }} at {{ $experience->company_name }}</h3>
+                                        <div class="experience-meta">
+                                            {{ $experience->location ?: 'Location not added' }}
+                                            ·
+                                            {{ $experience->start_date?->format('M Y') ?? 'Start date not added' }}
+                                            -
+                                            {{ $experience->end_date?->format('M Y') ?? 'Present' }}
+                                        </div>
+
+                                        @if ($experience->description)
+                                            <p>{{ $experience->description }}</p>
+                                        @endif
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endif
                     </article>
 
                     <article class="section-card span-6" id="github">
