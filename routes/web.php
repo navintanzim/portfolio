@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Education;
+use App\Models\Educations;
 use App\Models\Experience;
 use App\Models\Skill;
 use Illuminate\Support\Facades\Route;
@@ -16,7 +16,7 @@ Route::get('/', function () {
         ->orderByDesc('start_date')
         ->get();
 
-    $educations = Education::query()
+    $educations = Educations::query()
         ->orderBy('sort_order')
         ->orderByDesc('degree_obtained')
         ->get();
