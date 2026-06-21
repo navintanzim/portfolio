@@ -19,6 +19,7 @@ return new class extends Migration
             $table->date('start_date');
             $table->date('end_date')->nullable();
             $table->text('description')->nullable();
+            $table->text('reference')->nullable();
             $table->unsignedInteger('sort_order')->default(0);
             $table->timestamps();
 

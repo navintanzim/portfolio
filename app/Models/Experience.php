@@ -13,6 +13,7 @@ class Experience extends Model
         'start_date',
         'end_date',
         'description',
+        'reference',
         'sort_order',
     ];
 

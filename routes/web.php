@@ -2,6 +2,7 @@
 
 use App\Models\Educations;
 use App\Models\Experience;
+use App\Models\Project;
 use App\Models\Skill;
 use Illuminate\Support\Facades\Route;
 
@@ -21,5 +22,12 @@ Route::get('/', function () {
         ->orderByDesc('degree_obtained')
         ->get();
 
-    return view('welcome', compact('skills', 'educations', 'experiences'));
+    $projects = Project::query()
+        ->where('featured', true)
+        ->with(['highlights', 'technologies', 'images'])
+        ->orderBy('sort_order')
+        ->orderByDesc('completed_at')
+        ->get();
+
+    return view('welcome', compact('skills', 'educations', 'experiences', 'projects'));
 });
