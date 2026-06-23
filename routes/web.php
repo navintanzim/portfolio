@@ -31,3 +31,9 @@ Route::get('/', function () {
 
     return view('welcome', compact('skills', 'educations', 'experiences', 'projects'));
 });
+
+Route::get('/projects/{project:slug}', function (Project $project) {
+    $project->load(['highlights', 'technologies', 'images']);
+
+    return view('projects.show', compact('project'));
+})->name('projects.show');

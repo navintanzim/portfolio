@@ -133,6 +133,17 @@
             line-height: 1.75;
         }
 
+        .hero-about {
+            margin-top: 1.5rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--line);
+        }
+
+        .hero-about h2 {
+            margin-bottom: 0.75rem;
+            font-size: 1.35rem;
+        }
+
         .hero-panel {
             display: grid;
             gap: 1rem;
@@ -269,7 +280,7 @@
             }
 
             .project-list {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-template-columns: 1fr;
             }
 
         .skill-groups {
@@ -382,46 +393,60 @@
                 font-size: 1.15rem;
             }
 
+            .project-item h3 a:hover {
+                color: var(--accent);
+            }
+
             .project-meta {
                 margin-top: 0.55rem;
                 color: var(--muted);
                 line-height: 1.6;
             }
 
-            .project-tags,
-            .project-links,
-            .project-highlights {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.55rem;
-                margin-top: 0.9rem;
+            .project-preview {
+                width: 100%;
+                height: 220px;
+                margin-bottom: 0.9rem;
+                border-radius: 16px;
+                border: 1px solid var(--line);
+                object-fit: cover;
+                object-position: top center;
             }
 
-            .project-tag,
-            .project-link {
-                display: inline-flex;
-                align-items: center;
-                padding: 0.4rem 0.7rem;
+        .project-tags,
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+            margin-top: 0.9rem;
+        }
+
+        .project-tag,
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.4rem 0.7rem;
                 border-radius: 999px;
                 border: 1px solid var(--line);
                 background: rgba(255, 255, 255, 0.55);
                 font-size: 0.9rem;
-                line-height: 1.2;
-            }
+            line-height: 1.2;
+        }
+
+        .project-tag {
+            gap: 0.45rem;
+        }
+
+        .project-tag img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
 
             .project-link {
                 font-weight: 700;
                 color: var(--accent);
-            }
-
-            .project-highlights {
-                display: grid;
-                gap: 0.5rem;
-            }
-
-            .project-highlights div {
-                font-weight: 700;
-                color: var(--text);
             }
 
         .empty-state {
@@ -511,14 +536,24 @@
         </header>
 
         <main>
-            <section class="hero" id="home">
+            <section class="hero" id="about">
                 <div>
                     <div class="eyebrow">Portfolio </div>
                     <h1>Mashrure Tanzim</h1>
                     <p>
-                        This homepage is ready for your portfolio content. Replace this intro text, add your
-                        project details, and update each section below when you are ready.
+                        Full-stack web developer with 6 years of experience building Laravel, PHP, Vue, React, and Shopify-based solutions.
                     </p>
+
+                    <div class="hero-about">
+                        <h2>About Me</h2>
+                        <p>
+                            I have been working for 6 years as a full stack developer. During my tenure I
+                            worked with php (cakephp and laravel), html, css, javascript (both raw and
+                            vue.js), React with Polaris for Shopify, MYSQL and some rudimentary wordpress.
+                            I led a team as a focal point to complete given projects. I have worked on more
+                            than 15 projects related to the a2i initiative of the ministry.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="hero-panel">
@@ -529,30 +564,22 @@
                             alt="Profile picture of Mashrure Tanzim">
 
                         <div class="hero-facts">
-                            <span class="hero-fact">Marital Status: Unmarried</span>
-                            <span class="hero-fact">Gender: Male</span>
-                            <span class="hero-fact">Religion: Islam</span>
+                            
+                            
                             <span class="hero-fact">Nationality: Bangladeshi</span>
-                            <span class="hero-fact">Date of Birth: 25-03-1997</span>
+                            <span class="hero-fact">Location: Dhaka, Bangladesh</span>
+                            <span class="hero-fact">Specialization: Full-Stack Web Development</span>
+                            <span class="hero-fact">Core Stack: Laravel, PHP, JavaScript, Vue, React</span>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="content-grid">
-                <article class="section-card span-7" id="about">
-                    <h2>About Me</h2>
-                    <p>I have been working for 6 years as a full stack developer. During my tenure I
-                        worked with php (cakephp and laravel), html, css, javascript (both raw and
-                        vue.js), React with Polaris for Shopify, MYSQL and some rudimentary wordpress.
-                        I led a team as a focal point to complete given projects. I have worked on more
-                        than 15 projects related to the a2i initiative of the ministry.</p>
-                </article>
-
-                <article class="section-card span-5" id="projects">
+                <article class="section-card span-12" id="projects">
                     <h2>Featured Projects</h2>
 
-                    @if ($projects->isEmpty())
+                            @if ($projects->isEmpty())
                     <div class="empty-state">
                         No featured projects added yet. Add rows in <code>projects</code> and mark them as featured to
                         show them here.
@@ -561,7 +588,21 @@
                     <div class="project-list">
                         @foreach ($projects as $project)
                         <div class="project-item">
-                            <h3>{{ $project->title }}</h3>
+                            @if ($project->images->isNotEmpty())
+                            @php
+                                $previewPath = $project->images->first()->image_path;
+                                if (! \Illuminate\Support\Str::startsWith($previewPath, ['http://', 'https://'])) {
+                                    $previewPath = \Illuminate\Support\Str::startsWith($previewPath, 'public/')
+                                        ? asset(\Illuminate\Support\Str::after($previewPath, 'public/'))
+                                        : asset(ltrim($previewPath, '/'));
+                                }
+                            @endphp
+                            <img class="project-preview" src="{{ $previewPath }}" alt="{{ $project->title }}">
+                            @endif
+
+                            <h3>
+                                <a href="{{ route('projects.show', $project) }}">{{ $project->title }}</a>
+                            </h3>
 
                             @if ($project->short_description)
                             <p>{{ $project->short_description }}</p>
@@ -580,21 +621,18 @@
                             @if ($project->technologies->isNotEmpty())
                             <div class="project-tags">
                                 @foreach ($project->technologies as $technology)
-                                <span class="project-tag">{{ $technology->name }}</span>
+                                <span class="project-tag">
+                                    @if ($technology->icon)
+                                    <img src="{{ asset($technology->icon) }}" alt="{{ $technology->name }} icon">
+                                    @endif
+                                    <span>{{ $technology->name }}</span>
+                                </span>
                                 @endforeach
                             </div>
                             @elseif (! empty($project->tech_stack))
                             <div class="project-tags">
                                 @foreach ($project->tech_stack as $tech)
                                 <span class="project-tag">{{ $tech }}</span>
-                                @endforeach
-                            </div>
-                            @endif
-
-                            @if ($project->highlights->isNotEmpty())
-                            <div class="project-highlights">
-                                @foreach ($project->highlights as $highlight)
-                                <div>{{ $highlight->highlight }}</div>
                                 @endforeach
                             </div>
                             @endif
@@ -615,6 +653,10 @@
                                 {{ $project->images->count() }} project image{{ $project->images->count() > 1 ? 's' : '' }} attached
                             </div>
                             @endif
+
+                            <div class="project-links">
+                                <a class="project-link" href="{{ route('projects.show', $project) }}">View Project</a>
+                            </div>
                         </div>
                         @endforeach
                     </div>
