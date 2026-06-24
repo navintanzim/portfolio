@@ -1,0 +1,191 @@
+{
+  "profile": {
+    "name": "Mashrure Tanzim",
+    "eyebrow": "Portfolio",
+    "summary": "Full-stack web developer with 6 years of experience building Laravel, PHP, Vue, React, and Shopify-based solutions.",
+    "about_heading": "About Me",
+    "about_text": "I have been working for 6 years as a full stack developer. During my tenure I worked with php (cakephp and laravel), html, css, javascript (both raw and vue.js), React with Polaris for Shopify, MYSQL and some rudimentary wordpress. I led a team as a focal point to complete given projects. I have worked on more than 15 projects related to the a2i initiative of the ministry.",
+    "hero_image": "public/images/profile.jpeg",
+    "facts": [
+      "Nationality: Bangladeshi",
+      "Location: Dhaka, Bangladesh",
+      "Specialization: Full-Stack Web Development",
+      "Core Stack: Laravel, PHP, JavaScript, Vue, React"
+    ],
+    "github": {
+      "url": "https://github.com/navintanzim",
+      "title": "View GitHub Profile",
+      "description": "I am a web developer working mainly with PHP, CakePHP, Laravel, JavaScript, Vue, React, Java, SQL, HTML, and Shopify Polaris."
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/mashrure-tanzim-24b77a168",
+      "title": "View LinkedIn Profile",
+      "description": "I started my career as a junior IT officer in Notre Dame University Bangladesh, then spent 5 years as a full stack web developer at Business Automation Ltd., and currently work at Klinkode as a Software Engineer focused on Laravel and React. If you wish to contact me, you can find me at tanzimndub@gmail.com."
+    },
+    "contact": {
+      "email": "tanzimndub@gmail.com",
+      "phone": "01987168379",
+      "location": "MIRBAGH MORE, MODHUBAGH, DHAKA"
+    }
+  },
+  "skills": [
+    { "name": "Cakephp", "category": "Framework", "proficiency": 8, "sort_order": 1 },
+    { "name": "Laravel", "category": "Framework", "proficiency": 10, "sort_order": 2 },
+    { "name": "Vue", "category": "Framework", "proficiency": 7, "sort_order": 3 },
+    { "name": "React", "category": "Framework", "proficiency": 8, "sort_order": 4 },
+    { "name": "JavaScript (Jquery, Vue, React)", "category": "Languages", "proficiency": 9, "sort_order": 5 },
+    { "name": "PHP(Cake PHP, Laravel)", "category": "Languages", "proficiency": 10, "sort_order": 6 },
+    { "name": "JAVA", "category": "Languages", "proficiency": 7, "sort_order": 7 },
+    { "name": "SQL", "category": "Languages", "proficiency": 8, "sort_order": 8 },
+    { "name": "HTML", "category": "Languages", "proficiency": 9, "sort_order": 9 },
+    { "name": "Jira", "category": "Tools", "proficiency": 9, "sort_order": 101 },
+    { "name": "Bitbucket", "category": "Tools", "proficiency": 9, "sort_order": 111 },
+    { "name": "Git", "category": "Tools", "proficiency": 9, "sort_order": 121 },
+    { "name": "PHPstorm", "category": "Tools", "proficiency": 9, "sort_order": 131 },
+    { "name": "VSCode", "category": "Tools", "proficiency": 9, "sort_order": 141 },
+    { "name": "Codex", "category": "Tools", "proficiency": 9, "sort_order": 151 },
+    { "name": "SQLyog", "category": "Tools", "proficiency": 9, "sort_order": 161 },
+    { "name": "PHPMyadmin", "category": "Tools", "proficiency": 8, "sort_order": 171 },
+    { "name": "Jenkins", "category": "Tools", "proficiency": 6, "sort_order": 181 },
+    { "name": "Filezilla", "category": "Tools", "proficiency": 7, "sort_order": 191 },
+    { "name": "Postman", "category": "Tools", "proficiency": 8, "sort_order": 201 },
+    { "name": "Robo3T (Mongo)", "category": "Tools", "proficiency": 5, "sort_order": 211 },
+    { "name": "Polaris", "category": "Tools", "proficiency": 8, "sort_order": 221 },
+    { "name": "MySQL", "category": "Databases", "proficiency": 9, "sort_order": 23 },
+    { "name": "Mongodb", "category": "Databases", "proficiency": 5, "sort_order": 24 },
+    { "name": "Apache Tomcat", "category": "Web/Application Servers", "proficiency": 8, "sort_order": 25 },
+    { "name": "Windows", "category": "Operating Systems", "proficiency": 9, "sort_order": 26 },
+    { "name": "Linux (ubuntu and centos)", "category": "Operating Systems", "proficiency": 8, "sort_order": 27 }
+  ],
+  "educations": [
+    {
+      "institution": "Bangladesh University of Professionals",
+      "degree_type": "MASTER OF SCIENCE",
+      "degree_obtained": "2024",
+      "subject": "Information System Security",
+      "cgpa": 3.85,
+      "sort_order": 1
+    },
+    {
+      "institution": "NOTRE DAME UNIVERSITY BANGLADESH",
+      "degree_type": "BACHELOR OF SCIENCE",
+      "degree_obtained": "2019",
+      "subject": "Computer Science And Engineering",
+      "cgpa": 3.89,
+      "sort_order": 2
+    },
+    {
+      "institution": "NOTRE DAME COLLEGE",
+      "degree_type": "HIGHER SECONDARY SCHOOL CERTIFICATE",
+      "degree_obtained": "2015",
+      "subject": "Science",
+      "cgpa": 5.0,
+      "sort_order": 3
+    },
+    {
+      "institution": "IDEAL SCHOOL & COLLEGE",
+      "degree_type": "SECONDARY SCHOOL CERTIFICATE",
+      "degree_obtained": "2013",
+      "subject": "Science",
+      "cgpa": 5.0,
+      "sort_order": 4
+    }
+  ],
+  "experiences": [
+    {
+      "company_name": "KLINCODE",
+      "position": "LARAVEL & REACT DEVELOPER",
+      "location": "23/25, Ecosurv AN tower, 3-B, Dhaka 1216",
+      "start_date": "2025-05-01",
+      "end_date": null,
+      "description": "Responsible for full stack development of various Shopify apps. Task included frontend development, backend development, database and query management and reseach of new technologies that might be incorporated into the company. I was involved in Development of various Shopify apps like CartLock, Savify, Shipright etc.",
+      "reference": "",
+      "sort_order": 1
+    },
+    {
+      "company_name": "BUSINESS AUTOMATION LTD.",
+      "position": "WEB DEVELOPER",
+      "location": "Level 6, Sujat Mansion, 4, Dhaka 1216",
+      "start_date": "2020-03-01",
+      "end_date": "2025-04-30",
+      "description": "Responsible for full stack development of various php websites. Task included frontend development, backend development, database and query management, training up young professionals and reseach of new technologies that might be incorporated into the company tech stack. Sites included CRM, e-commerce, school management and various govt. projects like e-mutation, tourism portal, e-hajj, BTRC, BIDA and BRCP.",
+      "reference": "Reference: MD. KAMRUZZAMAN, Senior Software Engineer, Business Automation Ltd., Mobile: +88 01712018755, E-mail: zaman@batworld.com",
+      "sort_order": 2
+    },
+    {
+      "company_name": "NOTRE DAME UNIVERSITY BANGLADESH",
+      "position": "JUNIOR IT OFFICER",
+      "location": "2/A, Arambagh, Motijheel, Dhaka-1000, Dhaka 1000",
+      "start_date": "2019-10-01",
+      "end_date": "2020-02-29",
+      "description": "The main responsibility was maintaining the library and admission management software. Other tasks included managing the equipment of 3 computer labs and the server room. This entailed soft skills like audit and purchase, but also minor repair jobs for faulty devices.",
+      "reference": "Reference: A.H.M. SAIFUL ISLAM, Associate Professor, Chairman, Department of CSE, Notre Dame University Bangladesh, Mobile: +88 01924955431, E-mail: saiful@ndub.edu.bd",
+      "sort_order": 3
+    }
+  ],
+  "projects": [
+    {
+      "title": "Enterprise Business Solution of Business Automation",
+      "slug": "crm",
+      "original_slug": "CRM",
+      "short_description": "A CRM site that handles employee and partner interactions. It can manage attendance, projects, internal billings, partner contacts and requisitions and much more. It also has some partner sites that work together to form a network.",
+      "description": "Business Automation Ltd. introduce a standard EBS or Enterprise Business Solution, as a set of cloud base application, block chain technology that provide easy-to-use, scalable, high-performance block-storage services, business flow process, store data, maintain data flow, analysis data, generate report, publishing news bulletin and store data for any organizations.\n\nBA System’s EBS has various features included as Customer Relationship Management (CRM), Enterprise Resource Planning (ERP) and Supply Chain Management (SCM) with data analysis.\n\nBusiness Automation Ltd.’s Enterprise Business Solution (EBS) has a vision to make a sustainable business organization that organizations can get empower complete digital platform with the largest customer experience using update technology, data, and connectivity with people.",
+      "github_url": "https://github.com/navintanzim/ebs",
+      "demo_url": "https://ebs.ba-systems.com/",
+      "featured": true,
+      "sort_order": 0,
+      "started_at": null,
+      "completed_at": null,
+      "technologies": [
+        {
+          "name": "Laravel",
+          "slug": "laravel",
+          "icon": "public/images/laravel.png",
+          "website_url": "https://laravel.com/"
+        }
+      ],
+      "highlights": [
+        "Built API to connect sub projects like Partner Portal and Support Ticket Portal under the same database umbrella.",
+        "Built a centralized file storage system called Document Management System (DMS) that could handle attachments for all modules accessible to the logged in user.",
+        "Built a recruitment system module that could post jobs in the notice section and also the central company portal.",
+        "Built a support ticket resolver module that handled complaints from both public and employees.",
+        "Designed and implemented between 2019–2022,prior to widespread AI-assisted development tools.",
+        "Worked on a User module that handled a multi-layered access system for different features and modules of the site."
+      ],
+      "images": [
+        { "image_path": "public/images/ebs1.png", "caption": "Landing page", "sort_order": 0 },
+        { "image_path": "public/images/ebs2.png", "caption": "Notice board", "sort_order": 0 },
+        { "image_path": "public/images/ebs3.png", "caption": "Client portal", "sort_order": 0 }
+      ]
+    },
+    {
+      "title": "Event Reminder",
+      "slug": "event-reminder",
+      "original_slug": "Event Reminder",
+      "short_description": "A simple event reminder app with an alert system",
+      "description": "An event reminder app that sends both email alerts and in-app notifications for various entries made in a calendar. Admin level users can also create meetings while the others can only see them.",
+      "github_url": "https://github.com/navintanzim/event_reminder",
+      "demo_url": null,
+      "featured": true,
+      "sort_order": 0,
+      "started_at": null,
+      "completed_at": null,
+      "technologies": [
+        {
+          "name": "Laravel",
+          "slug": "laravel",
+          "icon": "public/images/laravel.png",
+          "website_url": "https://laravel.com/"
+        }
+      ],
+      "highlights": [
+        "Built a notification system that sent alerts via email and via an inbuilt cron that checks for updates every minute."
+      ],
+      "images": [
+        { "image_path": "public/images/event1.jpeg", "caption": "Meeting module", "sort_order": 0 },
+        { "image_path": "public/images/event2.jpeg", "caption": "Dashboard", "sort_order": 0 },
+        { "image_path": "public/images/event3.jpeg", "caption": "Login", "sort_order": 0 }
+      ]
+    }
+  ]
+}

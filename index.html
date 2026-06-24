@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="icon" href="public/favicon.ico">
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <nav aria-label="Section navigation">
+                <a href="#about">About Me</a>
+                <a href="#projects">Featured Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#github">GitHub</a>
+                <a href="#linkedin">LinkedIn</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="about">
+                <div>
+                    <div class="eyebrow" id="hero-eyebrow"></div>
+                    <h1 id="hero-name"></h1>
+                    <p id="hero-summary"></p>
+
+                    <div class="hero-about">
+                        <h2 id="hero-about-heading"></h2>
+                        <p id="hero-about-text"></p>
+                    </div>
+                </div>
+
+                <div class="hero-panel">
+                    <div class="panel-box">
+                        <img class="hero-image" id="hero-image" alt="">
+                        <div class="hero-facts" id="hero-facts"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-grid">
+                <article class="section-card span-12" id="projects">
+                    <h2>Featured Projects</h2>
+                    <div class="project-list" id="projects-list"></div>
+                </article>
+
+                <article class="section-card span-12" id="skills">
+                    <h2>Skills</h2>
+                    <div class="skill-groups" id="skills-groups"></div>
+                </article>
+
+                <article class="section-card span-6" id="education">
+                    <h2>Education</h2>
+                    <div class="education-list" id="education-list"></div>
+                </article>
+
+                <article class="section-card span-6" id="experience">
+                    <h2>Experience</h2>
+                    <div class="experience-list" id="experience-list"></div>
+                </article>
+
+                <article class="section-card span-6" id="github">
+                    <h2>GitHub</h2>
+                    <div class="link-grid">
+                        <a id="github-link" href="#" target="_blank" rel="noreferrer" aria-label="Open GitHub profile">
+                            <strong id="github-title"></strong>
+                            <span id="github-description"></span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="section-card span-6" id="linkedin">
+                    <h2>LinkedIn</h2>
+                    <div class="link-grid">
+                        <a id="linkedin-link" href="#" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile">
+                            <strong id="linkedin-title"></strong>
+                            <span id="linkedin-description"></span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="section-card span-12" id="contact">
+                    <h2>Contact</h2>
+                    <div class="contact-list">
+                        <div id="contact-email"></div>
+                        <div id="contact-phone"></div>
+                        <div id="contact-location"></div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            
+        </footer>
+    </div>
+
+    <script type="module" src="assets/site.js"></script>
+</body>
+</html>
