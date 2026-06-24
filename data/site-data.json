@@ -134,7 +134,7 @@
       "demo_url": "https://ebs.ba-systems.com/",
       "featured": true,
       "sort_order": 0,
-      "started_at": null,
+      "started_at": "2019-01-01",
       "completed_at": null,
       "technologies": [
         {
@@ -153,8 +153,9 @@
         "Worked on a User module that handled a multi-layered access system for different features and modules of the site."
       ],
       "images": [
-        { "image_path": "public/images/ebs1.png", "caption": "Landing page", "sort_order": 0 },
-        { "image_path": "public/images/ebs2.png", "caption": "Notice board", "sort_order": 0 },
+        { "image_path": "public/images/ebs dashboard.png", "caption": "Dashboard", "sort_order": 0 },
+        { "image_path": "public/images/ebs support.png", "caption": "Support Ticket Resolve Module", "sort_order": 0 },
+        { "image_path": "public/images/ebs dms.png", "caption": "Document Management System", "sort_order": 0 },
         { "image_path": "public/images/ebs3.png", "caption": "Client portal", "sort_order": 0 }
       ]
     },
@@ -168,8 +169,8 @@
       "demo_url": null,
       "featured": true,
       "sort_order": 0,
-      "started_at": null,
-      "completed_at": null,
+      "started_at": "2025-03-03",
+      "completed_at": "2025-03-03",
       "technologies": [
         {
           "name": "Laravel",
@@ -185,6 +186,40 @@
         { "image_path": "public/images/event1.jpeg", "caption": "Meeting module", "sort_order": 0 },
         { "image_path": "public/images/event2.jpeg", "caption": "Dashboard", "sort_order": 0 },
         { "image_path": "public/images/event3.jpeg", "caption": "Login", "sort_order": 0 }
+      ]
+    },{
+      "title": "Task Manager",
+      "slug": "task-manager",
+      "original_slug": "Task Manager",
+      "short_description": "A simple task manager app for task management and alerts",
+      "description": "The simple task manager is a web app build with Laravel and React. It uses shopify polaris and tailwind css to handle frontend. The admin level users can create tasks and the others can see and complete those tasks.",
+      "github_url": "https://github.com/navintanzim/task-manager",
+      "demo_url": null,
+      "featured": true,
+      "sort_order": 0,
+      "started_at": "2025-05-05",
+      "completed_at": "2025-05-05",
+      "technologies": [
+        {
+          "name": "Laravel",
+          "slug": "laravel",
+          "icon": "public/images/laravel.png",
+          "website_url": "https://laravel.com/"
+        },
+        {
+          "name": "React",
+          "slug": "react",
+          "icon": "public/images/React-icon.png",
+          "website_url": "https://react.dev/"
+        }
+      ],
+      "highlights": [
+        "Built a task management system which handled pending and completed tasks for a team."
+      ],
+      "images": [
+        { "image_path": "public/images/tm landing.jpg", "caption": "Landing Page", "sort_order": 0 },
+        { "image_path": "public/images/tm admin.jpg", "caption": "Admin View", "sort_order": 0 },
+        { "image_path": "public/images/tm create.jpg", "caption": "Task Form", "sort_order": 0 }
       ]
     }
   ]
