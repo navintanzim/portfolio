@@ -38,19 +38,21 @@
     { "name": "JAVA", "category": "Languages", "proficiency": 7, "sort_order": 7 },
     { "name": "SQL", "category": "Languages", "proficiency": 8, "sort_order": 8 },
     { "name": "HTML", "category": "Languages", "proficiency": 9, "sort_order": 9 },
-    { "name": "Jira", "category": "Tools", "proficiency": 9, "sort_order": 101 },
-    { "name": "Bitbucket", "category": "Tools", "proficiency": 9, "sort_order": 111 },
-    { "name": "Git", "category": "Tools", "proficiency": 9, "sort_order": 121 },
-    { "name": "PHPstorm", "category": "Tools", "proficiency": 9, "sort_order": 131 },
-    { "name": "VSCode", "category": "Tools", "proficiency": 9, "sort_order": 141 },
-    { "name": "Codex", "category": "Tools", "proficiency": 9, "sort_order": 151 },
-    { "name": "SQLyog", "category": "Tools", "proficiency": 9, "sort_order": 161 },
-    { "name": "PHPMyadmin", "category": "Tools", "proficiency": 8, "sort_order": 171 },
-    { "name": "Jenkins", "category": "Tools", "proficiency": 6, "sort_order": 181 },
-    { "name": "Filezilla", "category": "Tools", "proficiency": 7, "sort_order": 191 },
-    { "name": "Postman", "category": "Tools", "proficiency": 8, "sort_order": 201 },
-    { "name": "Robo3T (Mongo)", "category": "Tools", "proficiency": 5, "sort_order": 211 },
-    { "name": "Polaris", "category": "Tools", "proficiency": 8, "sort_order": 221 },
+    { "name": "Jira", "category": "Platforms / Workflow", "proficiency": 9, "sort_order": 101 },
+    { "name": "Bitbucket", "category": "Platforms / Workflow", "proficiency": 9, "sort_order": 111 },
+    { "name": "Git", "category": "Developer Tools", "proficiency": 9, "sort_order": 121 },
+    { "name": "PHPstorm", "category": "Developer Tools", "proficiency": 9, "sort_order": 131 },
+    { "name": "VSCode", "category": "Developer Tools", "proficiency": 9, "sort_order": 141 },
+    { "name": "Codex", "category": "Developer Tools", "proficiency": 9, "sort_order": 151 },
+    { "name": "SQLyog", "category": "Developer Tools", "proficiency": 9, "sort_order": 161 },
+    { "name": "PHPMyadmin", "category": "Developer Tools", "proficiency": 8, "sort_order": 171 },
+    { "name": "Jenkins", "category": "Platforms / Workflow", "proficiency": 6, "sort_order": 181 },
+    { "name": "Filezilla", "category": "Platforms / Workflow", "proficiency": 7, "sort_order": 191 },
+    { "name": "Postman", "category": "Developer Tools", "proficiency": 8, "sort_order": 201 },
+    { "name": "Robo3T (Mongo)", "category": "Developer Tools", "proficiency": 5, "sort_order": 211 },
+    { "name": "Polaris", "category": "UI Frameworks", "proficiency": 8, "sort_order": 221 },
+    { "name": "Bootstrap", "category": "UI Frameworks", "proficiency": 8, "sort_order": 222 },
+    { "name": "Tailwind CSS", "category": "UI Frameworks", "proficiency": 7, "sort_order": 223 },
     { "name": "MySQL", "category": "Databases", "proficiency": 9, "sort_order": 23 },
     { "name": "Mongodb", "category": "Databases", "proficiency": 5, "sort_order": 24 },
     { "name": "Apache Tomcat", "category": "Web/Application Servers", "proficiency": 8, "sort_order": 25 },
@@ -142,6 +144,18 @@
           "slug": "laravel",
           "icon": "public/images/laravel.png",
           "website_url": "https://laravel.com/"
+        },
+        {
+          "name": "MySQL",
+          "slug": "mysql",
+          "icon": "public/images/mysql.png",
+          "website_url": "https://www.mysql.com/"
+        },
+        {
+          "name": "Vue",
+          "slug": "vue",
+          "icon": "public/images/vue.png",
+          "website_url": "https://vuejs.org/"
         }
       ],
       "highlights": [
@@ -177,17 +191,66 @@
           "slug": "laravel",
           "icon": "public/images/laravel.png",
           "website_url": "https://laravel.com/"
+        },
+        {
+          "name": "MySQL",
+          "slug": "mysql",
+          "icon": "public/images/mysql.png",
+          "website_url": "https://www.mysql.com/"
         }
       ],
       "highlights": [
-        "Built a notification system that sent alerts via email and via an inbuilt cron that checks for updates every minute."
+        "Built a notification system that sent alerts via email and via an inbuilt cron that checks for updates every minute.",
+        "Designed and implemented without AI-assisted development tools.",
+        "Built a data import feature where the admin can import data directly to the database via an excel file."
       ],
       "images": [
         { "image_path": "public/images/event1.jpeg", "caption": "Meeting module", "sort_order": 0 },
         { "image_path": "public/images/event2.jpeg", "caption": "Dashboard", "sort_order": 0 },
         { "image_path": "public/images/event3.jpeg", "caption": "Login", "sort_order": 0 }
       ]
-    },{
+    },
+    {
+      "title": "HR",
+      "slug": "hr",
+      "original_slug": "HR",
+      "short_description": "An app for HR attendance and vacation management",
+      "description": "",
+      "github_url": null,
+      "demo_url": null,
+      "featured": true,
+      "sort_order": 0,
+      "started_at": null,
+      "completed_at": null,
+      "technologies": [{
+          "name": "Laravel",
+          "slug": "laravel",
+          "icon": "public/images/laravel.png",
+          "website_url": "https://laravel.com/"
+        },
+        {
+          "name": "MySQL",
+          "slug": "mysql",
+          "icon": "public/images/mysql.png",
+          "website_url": "https://www.mysql.com/"
+        },
+        {
+            "name": "Polaris",
+            "slug": "polaris",
+            "icon": "public/images/polaris.png",
+            "website_url": "https://polaris-react.shopify.com/"
+        }],
+      "highlights": [],
+      "images": [
+        { "image_path": "public/images/hr attend.png", "caption": "Attendance", "sort_order": 0 },
+        { "image_path": "public/images/hr dash.png", "caption": "Dashboard", "sort_order": 0 },
+        { "image_path": "public/images/hr chart.png", "caption": "Reports", "sort_order": 0 },
+        { "image_path": "public/images/hr users.png", "caption": "Employees", "sort_order": 0 },
+        { "image_path": "public/images/hr settings.png", "caption": "Settings", "sort_order": 0 },
+        { "image_path": "public/images/hr leave.png", "caption": "Vacation Management", "sort_order": 0 }
+      ]
+    },
+    {
       "title": "Task Manager",
       "slug": "task-manager",
       "original_slug": "Task Manager",
@@ -211,13 +274,27 @@
           "slug": "react",
           "icon": "public/images/React-icon.png",
           "website_url": "https://react.dev/"
+        },
+        {
+          "name": "MySQL",
+          "slug": "mysql",
+          "icon": "public/images/mysql.png",
+          "website_url": "https://www.mysql.com/"
+        },
+        {
+          "name": "Polaris",
+          "slug": "polaris",
+          "icon": "public/images/polaris.png",
+          "website_url": "https://polaris-react.shopify.com/"
         }
       ],
       "highlights": [
-        "Built a task management system which handled pending and completed tasks for a team."
+        "Built a task management system which handled pending and completed tasks for a team or a single user.",
+        "Built a calendar that tracks completed tasks this month"
       ],
       "images": [
-        { "image_path": "public/images/tm landing.jpg", "caption": "Landing Page", "sort_order": 0 },
+        { "image_path": "public/images/tm landing.jpg", "caption": "Login Page", "sort_order": 0 },
+        { "image_path": "public/images/tm dashboard.png", "caption": "Dashboard", "sort_order": 0 },
         { "image_path": "public/images/tm admin.jpg", "caption": "Admin View", "sort_order": 0 },
         { "image_path": "public/images/tm create.jpg", "caption": "Task Form", "sort_order": 0 }
       ]
