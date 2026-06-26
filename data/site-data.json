@@ -4,7 +4,7 @@
     "eyebrow": "Portfolio",
     "summary": "Full-stack web developer with 6 years of experience building Laravel, PHP, Vue, React, and Shopify-based solutions.",
     "about_heading": "About Me",
-    "about_text": "I have been working for 6 years as a full stack developer. During my tenure I worked with php (cakephp and laravel), html, css, javascript (both raw and vue.js), React with Polaris for Shopify, MYSQL and some rudimentary wordpress. I led a team as a focal point to complete given projects. I have worked on more than 15 projects related to the a2i initiative of the ministry.",
+    "about_text": "I have been working for 6 years as a full stack developer. During my tenure I worked with php (cakephp and laravel), html, css, javascript (both raw and vue.js), React with Polaris for Shopify, MYSQL and some rudimentary wordpress. I led a team as a focal point to complete given projects. I have worked on more than 15 projects related to the a2i initiative of the ministry. Currently I work with Shopify Platforms to develop e-commerce apps.",
     "hero_image": "public/images/profile.jpeg",
     "facts": [
       "Nationality: Bangladeshi",
@@ -215,13 +215,13 @@
       "slug": "hr",
       "original_slug": "HR",
       "short_description": "An app for HR attendance and vacation management",
-      "description": "",
-      "github_url": null,
+      "description": "Built with Laravel and Polaris. We have two types of users: Employee and Admin. They are defined by the 'Roles' radio button. An employee can check in for daily attendance and apply for leave. An admin can approve/reject the leaves but can not apply himself or check in. But he has access to additional modules like Settings and Users. Settings defines app configurations like office time, default leave days etc. Users module handles new user creation. Only the admin can create new users. New users cant register themselves, so to make new users, we must login as an admin. Read the readme for login details.",
+      "github_url": "https://github.com/navintanzim/HR",
       "demo_url": null,
       "featured": true,
       "sort_order": 0,
-      "started_at": null,
-      "completed_at": null,
+      "started_at": "2026-01-21",
+      "completed_at": "2026-01-30",
       "technologies": [{
           "name": "Laravel",
           "slug": "laravel",
@@ -240,7 +240,12 @@
             "icon": "public/images/polaris.png",
             "website_url": "https://polaris-react.shopify.com/"
         }],
-      "highlights": [],
+      "highlights": [
+        "Built a system to track the attendance and leave of multiple employees with charts and graphs to improve readability.",
+        "Built an automatic leave system that dynamically assigns attendance status based on time of login.",
+        "Built a settings module that can assign the time at which an employee will be automatically rendered late or absent. Changeable timezone.",
+        "Built a leave system that can dynamically alter how many leaves of a type an employee can have per year."
+      ],
       "images": [
         { "image_path": "public/images/hr attend.png", "caption": "Attendance", "sort_order": 0 },
         { "image_path": "public/images/hr dash.png", "caption": "Dashboard", "sort_order": 0 },
