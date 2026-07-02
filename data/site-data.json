@@ -304,5 +304,78 @@
         { "image_path": "public/images/tm create.jpg", "caption": "Task Form", "sort_order": 0 }
       ]
     }
+  ],
+  "professional_projects": [
+      {
+        "title": "Enterprise Business Solution of Business Automation",
+        "slug": "crm",
+        "original_slug": "CRM",
+        "short_description": "A CRM site that handles employee and partner interactions. It can manage attendance, projects, internal billings, partner contacts and requisitions and much more. It also has some partner sites that work together to form a network.",
+        "description": "Business Automation Ltd. introduce a standard EBS or Enterprise Business Solution, as a set of cloud base application, block chain technology that provide easy-to-use, scalable, high-performance block-storage services, business flow process, store data, maintain data flow, analysis data, generate report, publishing news bulletin and store data for any organizations.\n\nBA System’s EBS has various features included as Customer Relationship Management (CRM), Enterprise Resource Planning (ERP) and Supply Chain Management (SCM) with data analysis.\n\nBusiness Automation Ltd.’s Enterprise Business Solution (EBS) has a vision to make a sustainable business organization that organizations can get empower complete digital platform with the largest customer experience using update technology, data, and connectivity with people.",
+        "github_url": "https://github.com/navintanzim/ebs",
+        "demo_url": "https://ebs.ba-systems.com/",
+        "featured": true,
+        "sort_order": 0,
+        "started_at": "2019-01-01",
+        "completed_at": null,
+        "technologies": [
+          {
+            "name": "Laravel",
+            "slug": "laravel",
+            "icon": "public/images/laravel.png",
+            "website_url": "https://laravel.com/"
+          },
+          {
+            "name": "MySQL",
+            "slug": "mysql",
+            "icon": "public/images/mysql.png",
+            "website_url": "https://www.mysql.com/"
+          },
+          {
+            "name": "Vue",
+            "slug": "vue",
+            "icon": "public/images/vue.png",
+            "website_url": "https://vuejs.org/"
+          }
+        ],
+        "highlights": [
+          "Built API to connect sub projects like Partner Portal and Support Ticket Portal under the same database umbrella.",
+          "Built a centralized file storage system called Document Management System (DMS) that could handle attachments for all modules accessible to the logged in user.",
+          "Built a recruitment system module that could post jobs in the notice section and also the central company portal.",
+          "Built a support ticket resolver module that handled complaints from both public and employees.",
+          "Designed and implemented between 2019–2022,prior to widespread AI-assisted development tools.",
+          "Worked on a User module that handled a multi-layered access system for different features and modules of the site."
+        ],
+        "images": [
+          {
+            "image_path": "public/images/ebs dashboard.png",
+            "caption": "Dashboard",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/ebs support.png",
+            "caption": "Support Ticket Resolve Module",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/ebs dms.png",
+            "caption": "Document Management System",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/ebs3.png",
+            "caption": "Client portal",
+            "sort_order": 0
+          }
+        ]
+      },
+      {
+        "title": "E-Mutation",
+        "slug": "emutation",
+        "original_slug": "emutation",
+        "short_description": "A govt. website to automatically handle land mutation system",
+        "github_url": ""
+        
+      }
   ]
 }
