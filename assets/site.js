@@ -260,7 +260,7 @@ loadSiteData()
     .then((data) => {
         renderProfile(data.profile);
         renderProjects(data.projects.filter((project) => project.featured));
-        renderProProjects(data.professional_projects.filter((project) => project.featured));
+        renderProProjects(data.professional_projects);
         renderSkills(data.skills);
         renderEducations(data.educations);
         renderExperiences(data.experiences);

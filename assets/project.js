@@ -40,7 +40,13 @@ const projectSlug = document.body.dataset.projectSlug;
 
 loadSiteData()
     .then((data) => {
-        const project = data.projects.find((item) => item.slug === projectSlug);
+        const allProjects = [
+            ...(data.projects || []),
+            ...(data.professional_projects || [])
+        ];
+
+        const project = allProjects.find(item => item.slug === projectSlug);
+
         if (!project) {
             throw new Error(`Project not found for slug: ${projectSlug}`);
         }
@@ -87,6 +93,8 @@ loadSiteData()
         const linkItems = [];
         if (project.github_url) {
             linkItems.push(`<a class="action-link" href="${escapeHtml(project.github_url)}" target="_blank" rel="noreferrer">View GitHub</a>`);
+        }else{
+            linkItems.push(`<a class="project-link" >Source Code: Proprietary</a>`);
         }
         if (project.demo_url) {
             linkItems.push(`<a class="action-link" href="${escapeHtml(project.demo_url)}" target="_blank" rel="noreferrer">View Live Demo</a>`);
