@@ -10,7 +10,7 @@ Run a simple static server from the project root:
 php -S 127.0.0.1:8080
 ```
 
-Then open:
+Then open in browser:
 
 ```text
 http://127.0.0.1:8080/index.html
