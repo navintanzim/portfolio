@@ -51,4 +51,4 @@ Update this file to change:
 
 - The old Laravel Blade-driven rendering path has been removed from active use.
 - `routes/web.php` now only redirects to the static HTML pages if Laravel is ever started.
-- GitHub Pages should use the static files directly from the repository. Testing deployment.
+- GitHub Pages should use the static files directly from the repository. Testing deployment
