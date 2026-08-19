@@ -25,7 +25,7 @@
     "contact": {
       "email": "tanzimndub@gmail.com",
       "phone": "01987168379",
-      "location": "MIRBAGH MORE, MODHUBAGH, DHAKA"
+      "location": "DHAKA, BANGLADESH"
     }
   },
   "skills": [
@@ -35,7 +35,7 @@
     { "name": "React", "category": "Framework", "proficiency": 8, "sort_order": 4 },
     { "name": "JavaScript (Jquery, Vue, React)", "category": "Languages", "proficiency": 9, "sort_order": 5 },
     { "name": "PHP(Cake PHP, Laravel)", "category": "Languages", "proficiency": 10, "sort_order": 6 },
-    { "name": "JAVA", "category": "Languages", "proficiency": 7, "sort_order": 7 },
+    { "name": "JAVA", "category": "Languages", "proficiency": 5, "sort_order": 7 },
     { "name": "SQL", "category": "Languages", "proficiency": 8, "sort_order": 8 },
     { "name": "HTML", "category": "Languages", "proficiency": 9, "sort_order": 9 },
     { "name": "Jira", "category": "Platforms / Workflow", "proficiency": 9, "sort_order": 101 },
@@ -111,7 +111,7 @@
       "start_date": "2020-03-01",
       "end_date": "2025-04-30",
       "description": "Responsible for full stack development of various php websites. Task included frontend development, backend development, database and query management, training up young professionals and reseach of new technologies that might be incorporated into the company tech stack. Sites included CRM, e-commerce, school management and various govt. projects like e-mutation, tourism portal, e-hajj, BTRC, BIDA and BRCP.",
-      "reference": "Reference: MD. KAMRUZZAMAN, Senior Software Engineer, Business Automation Ltd., Mobile: +88 01712018755, E-mail: zaman@batworld.com",
+      "reference": "Reference: MD. KAMRUZZAMAN, Senior Software Engineer, Business Automation Ltd., E-mail: zaman@batworld.com",
       "sort_order": 2
     },
     {
@@ -121,7 +121,7 @@
       "start_date": "2019-10-01",
       "end_date": "2020-02-29",
       "description": "The main responsibility was maintaining the library and admission management software. Other tasks included managing the equipment of 3 computer labs and the server room. This entailed soft skills like audit and purchase, but also minor repair jobs for faulty devices.",
-      "reference": "Reference: A.H.M. SAIFUL ISLAM, Associate Professor, Chairman, Department of CSE, Notre Dame University Bangladesh, Mobile: +88 01924955431, E-mail: saiful@ndub.edu.bd",
+      "reference": "Reference: A.H.M. SAIFUL ISLAM, Associate Professor, Chairman, Department of CSE, Notre Dame University Bangladesh, E-mail: saiful@ndub.edu.bd",
       "sort_order": 3
     }
   ],
