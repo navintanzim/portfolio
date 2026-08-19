@@ -4,7 +4,7 @@
     "eyebrow": "Portfolio",
     "summary": "Full-stack web developer with 6 years of experience building Laravel, PHP, Vue, React, and Shopify-based solutions.",
     "about_heading": "About Me",
-    "about_text": "I have been working for 6 years as a full stack developer. During my tenure I worked with php (cakephp and laravel), html, css, javascript (both raw and vue.js), React with Polaris for Shopify, MYSQL and some rudimentary wordpress. I led a team as a focal point to complete given projects. I have worked on more than 15 projects related to the a2i initiative of the ministry. Currently I work with Shopify Platforms to develop e-commerce apps.",
+    "about_text": "I have been working for 6 years as a full stack developer. During my tenure I worked with php (cakephp and laravel), html, css, javascript (both raw and vue.js), React with Polaris for Shopify, MYSQL and some rudimentary wordpress. I led a team as a focal point to complete given projects. Currently I work with Shopify Platforms to develop e-commerce apps. I have worked on more than 15 projects related to the a2i initiative of the ministry.",
     "hero_image": "public/images/profile.jpeg",
     "facts": [
       "Nationality: Bangladeshi",
@@ -418,6 +418,64 @@
           {
             "image_path": "public/images/land 4.png",
             "caption": "Home page for Land Portal",
+            "sort_order": 0
+          }
+        ]
+        
+      },
+      {
+        "title": "EMRD Dashboard",
+        "slug": "emrd",
+        "original_slug": "emrd",
+        "short_description": "A govt. website to facilitate public data/monitoring of the various mineral resources of Bangladesh and their use.",
+        "description": "Through this site, anyone who is concerned with these sectors can monitor Bangladesh's energy and mineral-resource sector. For example, its gas section currently provides figures for gas reserves, remaining reserves, production, transmission and distribution, while the petroleum section provides import/sale/stock information. My personal task was fixing the public dashboard and building additional features for the reporting system (specifically the excel report part). Many data API's were missing from the workflow and I had to test each and every combination to see which charts were actually being generated and which ones were producing broken reports. It was a test for my QA abilities as well as my developer skills.",
+        "github_url": "",
+        "demo_url": "https://emrddashboard.gov.bd/",
+        "featured": false,
+        "sort_order": 0,
+        "started_at": "2023-05-01",
+        "completed_at": "2024-06-30",
+        "technologies": [
+          {
+            "name": "Laravel",
+            "slug": "laravel",
+            "icon": "public/images/laravel.png"
+          },
+          {
+            "name": "MySQL",
+            "slug": "mysql",
+            "icon": "public/images/mysql.png"
+          },
+          {
+            "name": "JS",
+            "slug": "js",
+            "icon": "public/images/js.jpg"
+          }
+        ],
+        "highlights": [
+          "Found and fixed issues with the dynamic dashboard showing the graphs and charts for various resources.",
+          "Upgraded a reporting system that allowed downloading the required data in an Excel format.",
+          "Found and fixed various broken data links and missing information to improve user experience."
+        ],
+        "images": [
+          {
+            "image_path": "public/images/emrd1.png",
+            "caption": "Dynamic Dashboard",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/emrd2.png",
+            "caption": "Dashboard opens into various charts",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/emrd3.png",
+            "caption": "Report Download Section",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/emrd4.png",
+            "caption": "Report Generate Section",
             "sort_order": 0
           }
         ]
