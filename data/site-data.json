@@ -38,6 +38,7 @@
     { "name": "JAVA", "category": "Languages", "proficiency": 5, "sort_order": 7 },
     { "name": "SQL", "category": "Languages", "proficiency": 8, "sort_order": 8 },
     { "name": "HTML", "category": "Languages", "proficiency": 9, "sort_order": 9 },
+    { "name": "Rust", "category": "Languages", "proficiency": 7, "sort_order": 10 },
     { "name": "Jira", "category": "Platforms / Workflow", "proficiency": 9, "sort_order": 101 },
     { "name": "Bitbucket", "category": "Platforms / Workflow", "proficiency": 9, "sort_order": 111 },
     { "name": "Git", "category": "Developer Tools", "proficiency": 9, "sort_order": 121 },
@@ -476,6 +477,76 @@
           {
             "image_path": "public/images/emrd4.png",
             "caption": "Report Generate Section",
+            "sort_order": 0
+          }
+          
+        ]
+        
+      },
+      {
+        "title": "CartLock",
+        "slug": "cartlock",
+        "original_slug": "cartlock",
+        "short_description": "Cart Lock offers customizable conditions to block unwanted purchases based on specific rules such as country, product quantity, customer profiles, discounts, markets, and more.",
+        "description": "Cart Lock offers customizable conditions to block unwanted purchases based on specific rules such as country, product quantity, customer profiles, discounts, markets, and more—making it ideal for stopping bots. With real-time validation powered by Shopify Functions, it ensures only valid orders are placed. Transparency is maintained through clear warnings, keeping customers informed. My first experience with Rust came via this project. Built with React, Node, and Rust.",
+        "github_url": "",
+        "demo_url": "https://apps.shopify.com/cart-lock",
+        "featured": false,
+        "sort_order": 0,
+        "started_at": "2025-05-01",
+        "completed_at": "2026-06-30",
+        "technologies": [
+          {
+            "name": "Laravel",
+            "slug": "laravel",
+            "icon": "public/images/laravel.png"
+          },
+          {
+            "name": "MySQL",
+            "slug": "mysql",
+            "icon": "public/images/mysql.png"
+          },
+          {
+            "name": "React",
+            "slug": "react",
+            "icon": "public/images/React-icon.png"
+          },
+          {
+            "name": "Rust",
+            "slug": "rust",
+            "icon": "public/images/rust.png"
+          },
+          {
+            "name": "Node js",
+            "slug": "node",
+            "icon": "public/images/node.png"
+          }
+        ],
+        "highlights": [
+          "Found and fixed issues with the rule engine. Compared existing behaviour in the shopify dev store with a rule dictionary and fixed those that differed.",
+          "Built Rust extensions to allow a more varied collection of rules to be made by users of paid plans.",
+          "Worked on improving google lighthouse performance and 'Built for Shopify' badge acquisition.",
+          "Checked youtube tutorials and updated the scripts when needed based on app updates."
+        ],
+        "images": [
+          {
+            "image_path": "public/images/cart1.png",
+            "caption": "CartLock Dashboard",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/cart2.png",
+            "caption": "The form for create/edit of rules",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/cart3.png",
+            "caption": "Where all the rules are listed",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/cart4.png",
+            "caption": "Where all the plans and prices are listed",
             "sort_order": 0
           }
         ]
