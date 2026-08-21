@@ -127,50 +127,7 @@
     }
   ],
   "projects": [
-    {
-      "title": "Enterprise Business Solution of Business Automation",
-      "slug": "crm",
-      "original_slug": "CRM",
-      "short_description": "A CRM site that handles employee and partner interactions. It can manage attendance, projects, internal billings, partner contacts and requisitions and much more. It also has some partner sites that work together to form a network.",
-      "description": "Business Automation Ltd. introduce a standard EBS or Enterprise Business Solution, as a set of cloud base application, block chain technology that provide easy-to-use, scalable, high-performance block-storage services, business flow process, store data, maintain data flow, analysis data, generate report, publishing news bulletin and store data for any organizations.\n\nBA System’s EBS has various features included as Customer Relationship Management (CRM), Enterprise Resource Planning (ERP) and Supply Chain Management (SCM) with data analysis.\n\nBusiness Automation Ltd.’s Enterprise Business Solution (EBS) has a vision to make a sustainable business organization that organizations can get empower complete digital platform with the largest customer experience using update technology, data, and connectivity with people.",
-      "github_url": "https://github.com/navintanzim/ebs",
-      "demo_url": "https://ebs.ba-systems.com/",
-      "featured": true,
-      "sort_order": 0,
-      "started_at": "2019-01-01",
-      "completed_at": null,
-      "technologies": [
-        {
-          "name": "Laravel",
-          "slug": "laravel",
-          "icon": "public/images/laravel.png"
-        },
-        {
-          "name": "MySQL",
-          "slug": "mysql",
-          "icon": "public/images/mysql.png"
-        },
-        {
-          "name": "Vue",
-          "slug": "vue",
-          "icon": "public/images/vue.png"
-        }
-      ],
-      "highlights": [
-        "Built API to connect sub projects like Partner Portal and Support Ticket Portal under the same database umbrella.",
-        "Built a centralized file storage system called Document Management System (DMS) that could handle attachments for all modules accessible to the logged in user.",
-        "Built a recruitment system module that could post jobs in the notice section and also the central company portal.",
-        "Built a support ticket resolver module that handled complaints from both public and employees.",
-        "Designed and implemented between 2019–2022,prior to widespread AI-assisted development tools.",
-        "Worked on a User module that handled a multi-layered access system for different features and modules of the site."
-      ],
-      "images": [
-        { "image_path": "public/images/ebs dashboard.png", "caption": "Dashboard", "sort_order": 0 },
-        { "image_path": "public/images/ebs support.png", "caption": "Support Ticket Resolve Module", "sort_order": 0 },
-        { "image_path": "public/images/ebs dms.png", "caption": "Document Management System", "sort_order": 0 },
-        { "image_path": "public/images/ebs3.png", "caption": "Client portal", "sort_order": 0 }
-      ]
-    },
+    
     {
       "title": "Event Reminder",
       "slug": "event-reminder",
@@ -547,6 +504,75 @@
           {
             "image_path": "public/images/cart4.png",
             "caption": "Where all the plans and prices are listed",
+            "sort_order": 0
+          }
+        ]
+        
+      },
+      {
+        "title": "PayRules",
+        "slug": "payrules",
+        "original_slug": "payrules",
+        "short_description": "PayRules simplifies a checkout process by allowing you to hide payment methods like Cash on Delivery based on multiple conditions, which helps prevent unwanted chargebacks, account freezes, and shipping fees.",
+        "description": "This customization enhances the checkout experience, making it more convenient and relevant for you and your customers. With PayRules, you can improve customer satisfaction, increase conversions, and protect a business from unnecessary costs. Built with React, Node, and Rust.",
+        "github_url": "",
+        "demo_url": "https://apps.shopify.com/payrules-conditional-payment-methods",
+        "featured": false,
+        "sort_order": 0,
+        "started_at": "2025-05-01",
+        "completed_at": "2026-06-30",
+        "technologies": [
+          {
+            "name": "Laravel",
+            "slug": "laravel",
+            "icon": "public/images/laravel.png"
+          },
+          {
+            "name": "MySQL",
+            "slug": "mysql",
+            "icon": "public/images/mysql.png"
+          },
+          {
+            "name": "React",
+            "slug": "react",
+            "icon": "public/images/React-icon.png"
+          },
+          {
+            "name": "Rust",
+            "slug": "rust",
+            "icon": "public/images/rust.png"
+          },
+          {
+            "name": "Node js",
+            "slug": "node",
+            "icon": "public/images/node.png"
+          }
+        ],
+        "highlights": [
+          "Found and fixed issues with the rule engine. Compared existing behaviour in the shopify dev store with a rule dictionary and fixed those that differed.",
+          "Built Rust extensions to allow a more varied collection of rules to be made by users of paid plans.",
+          "Worked on improving google lighthouse performance and 'Built for Shopify' badge acquisition.",
+          "Checked youtube tutorials and updated the scripts when needed based on app updates."
+        ],
+        "images": [
+          {
+            "image_path": "public/images/pay1.png",
+            "caption": "Payrules Dashboard",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/pay2.png",
+            "caption": "The rule combination selection page",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/pay3.png",
+            "caption": "The form for create/edit of rules",
+            "sort_order": 0
+          },
+          {
+            "image_path": "public/images/pay4.png",
+            "caption": "The rule table",
             "sort_order": 0
           }
         ]
