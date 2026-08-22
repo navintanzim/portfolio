@@ -268,7 +268,7 @@
         "featured": true,
         "sort_order": 0,
         "started_at": "2019-01-01",
-        "completed_at": null,
+        "completed_at": "2022-06-30",
         "technologies": [
           {
             "name": "Laravel",
